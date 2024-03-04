@@ -5,12 +5,13 @@ body {
   flex-direction: column;
   font-family: prata;
 }
+
+/* Home CSS */
 .apptitle {
   background-color: #fb88b4;
   text-align: center;
 }
-
-
+/* Home CSS Questions */
 .question {
   position: relative;
   border: solid #fb88b4 0.5rem;
@@ -57,7 +58,7 @@ body {
 .categories p {
   padding: 1px;
 }
-
+/* Home CSS NAV */
 nav {
   background-color: #fb88b4;
   position: fixed;
@@ -73,4 +74,65 @@ nav {
 }
 .menu img {
   width: 30px;
+}
+
+/* Bookmarks Css */
+
+/* Profile Css */
+
+.profile-header {
+  padding-inline: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: solid 1px black;
+  background-color: green;
+  position: relative;
+}
+.profil-header h2 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.profile-picture img {
+  max-width: 200px;
+  display: block;
+}
+.profile-picture {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 10px;
+  position: absolute;
+}
+.profile-aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-inline: 10px;
+}
+
+.profile-bookmarks {
+  display: flex;
+  flex-direction: column;
+}
+.profile-bookmarks-score {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: solid 1px black;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.profile-dark {
+  display: flex;
+  justify-content: center;
+  padding-inline: 10px;
+  align-items: baseline;
+  gap: 10px;
+  border: solid 1px black;
 }
