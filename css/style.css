@@ -3,14 +3,59 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: prata;
 }
 .apptitle {
   background-color: #fb88b4;
   text-align: center;
 }
+
+#questioncards {
+}
+
 .question {
-  padding: 2rem;
+  position: relative;
   border: solid #fb88b4 0.5rem;
   border-radius: 2rem;
   margin: 2rem;
+  padding: 10px;
+}
+.question-bookmark {
+  position: absolute;
+  top: -2px;
+  right: -250px;
+}
+
+.question-bookmark image {
+  width: 30px;
+  fill: red;
+}
+
+.question-answers {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.questions-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.questions-buttons button {
+  background-color: #f9f07a;
+  color: hotpink;
+  border: #f9f07a 1px;
+  padding: 0.5rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: end;
+  gap: 2px;
+  left: 1px;
+  color: gray;
+  font-size: small;
+}
+.categories p {
+  padding: 1px;
 }
