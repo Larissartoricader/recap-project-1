@@ -1,3 +1,6 @@
+@import "components/questions.css";
+@import "components/nav.css";
+
 body {
   height: 100vh;
   margin: 0 auto;
@@ -12,7 +15,7 @@ body {
   text-align: center;
 }
 /* Home CSS Questions */
-.question {
+/* .question {
   position: relative;
   border: solid #fb88b4 0.5rem;
   border-radius: 2rem;
@@ -27,7 +30,7 @@ body {
 
 .question-bookmark image {
   width: 30px;
-  fill: red;
+  fill: hotpink;
 }
 
 .question-answers {
@@ -57,8 +60,8 @@ body {
 }
 .categories p {
   padding: 1px;
-}
-/* Home CSS NAV */
+} */
+/* Home CSS NAV
 nav {
   background-color: #fb88b4;
   position: fixed;
@@ -74,7 +77,7 @@ nav {
 }
 .menu img {
   width: 30px;
-}
+} */
 
 /* Bookmarks Css */
 
