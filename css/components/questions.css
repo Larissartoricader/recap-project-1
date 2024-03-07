@@ -22,6 +22,9 @@
   padding-bottom: 1rem;
 }
 
+.question-solution {
+  visibility: hidden;
+}
 .questions-buttons {
   display: flex;
   justify-content: center;

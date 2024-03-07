@@ -6,7 +6,7 @@
   margin: 1vw;
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   gap: 10vw;
 }
 .profil-header h2 {
