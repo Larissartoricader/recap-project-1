@@ -1,0 +1,58 @@
+/* Profile Css */
+
+.profile-header {
+  padding-inline: 10px;
+  max-width: 100vw;
+  margin: 1vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 10vw;
+}
+.profil-header h2 {
+  top: 10px;
+  left: 20px;
+  font-size: 6rem;
+}
+.profile-picture {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 10px;
+}
+.profile-picture img {
+  max-width: 150px;
+}
+
+.profile-aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-inline: 10px;
+}
+
+.profile-bookmarks {
+  display: flex;
+  flex-direction: column;
+}
+.profile-bookmarks-score {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: solid 1px black;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.profile-dark {
+  display: flex;
+  justify-content: center;
+  padding-inline: 10px;
+  align-items: baseline;
+  gap: 10px;
+  border: solid 1px black;
+}

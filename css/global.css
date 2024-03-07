@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: prata;
+}
+
+/* Home CSS */
+.apptitle {
+  background-color: #fb88b4;
+  text-align: center;
+}
+
+:root {
+  font-size: 16px;
+}
