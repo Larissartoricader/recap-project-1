@@ -1,11 +1,8 @@
 const allbuttonsAnswer = document.querySelectorAll('[data-js="button-answer"]');
-console.log(allbuttonsAnswer);
 const allBoxQuestions = document.querySelectorAll("[data-js=box-question]");
+const boxSolution = document.querySelectorAll("[data-js=box-solution]");
 
-const boxAnswer = document.querySelector("[data-js=box-answer]");
-console.log(boxAnswer);
-
-allbuttonsAnswer.forEach((buttonAnswer) => {
+allbuttonsAnswer.forEach((buttonAnswer, boxSolution) => {
   buttonAnswer.addEventListener("mouseover", () => {
     buttonAnswer.style.backgroundColor = "hotpink";
     buttonAnswer.style.color = "#f9f07a";
@@ -15,12 +12,9 @@ allbuttonsAnswer.forEach((buttonAnswer) => {
     buttonAnswer.style.backgroundColor = "#f9f07a";
     buttonAnswer.style.color = "hotpink";
   });
+  // buttonAnswer.addEventListener("click", () => {
+  //   boxSolution.style.visibility = "visible";
+  // });
 });
 
-allBoxQuestions.forEach((boxQuestion) => {
-  allbuttonsAnswer.addEventListener("click", () => {
-    boxQuestion.style.visibility = "hidden";
-  });
-});
-//   boxAnswer.style.visibility = "visible";
-// });
+// boxSolution.style.visibility = "visible";

@@ -22,8 +22,8 @@
   padding-bottom: 1rem;
 }
 
-.question-solution {
-  visibility: hidden;
+.box-solution {
+  display: hidden;
 }
 .questions-buttons {
   display: flex;
