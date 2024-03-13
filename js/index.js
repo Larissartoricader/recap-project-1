@@ -18,3 +18,19 @@ allbuttonsAnswer.forEach((buttonAnswer, boxSolution) => {
 });
 
 // boxSolution.style.visibility = "visible";
+
+// ------- SVG Bookmarks ----------
+
+const bookmark = document.querySelector(`[data-js="bookmark"]`);
+
+bookmark.addEventListener("click", () => {
+  const emptyBookmark = bookmark.getAttribute("xlink:href");
+
+  if (emptyBookmark === `assets/images/bookmark-heart-fill.svg`) {
+    const newBookmark = "assets/images/bookmark-heart.svg";
+    bookmark.setAttribute("xlink:href", newBookmark);
+  } else {
+    const newBookmark = `assets/images/bookmark-heart-fill.svg`;
+    bookmark.setAttribute("xlink:href", newBookmark);
+  }
+});
