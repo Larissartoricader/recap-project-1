@@ -48,6 +48,14 @@
   padding: 0.5rem;
 }
 
+.hint--unvisible {
+  visibility: hidden;
+}
+
+.hint--visible {
+  visibility: visible;
+}
+
 .categories {
   display: flex;
   justify-content: end;

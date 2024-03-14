@@ -5,6 +5,10 @@ const boxQuestion = document.querySelector("[data-js=box-question]");
 console.log(boxQuestion);
 const boxSolution = document.querySelector("[data-js=box-solution]");
 console.log(boxSolution);
+const buttonHint = document.querySelector('[data-js="hint-button"]');
+console.log(buttonHint);
+const hinText = document.querySelector('[data-js="hint-Text"]');
+console.log(hinText);
 
 // allbuttonsAnswer.forEach((buttonAnswer) => {
 //   buttonAnswer.addEventListener("mouseover", () => {
@@ -40,4 +44,8 @@ buttonAnswer.addEventListener("click", () => {
   console.log(boxSolution);
   boxSolution.classList.toggle("box-solution--visible");
   boxQuestion.classList.toggle("box-question--unvisible");
+});
+
+buttonHint.addEventListener("click", () => {
+  hinText.classList.toggle("hint--visible");
 });
