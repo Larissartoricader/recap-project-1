@@ -46,6 +46,7 @@
   color: hotpink;
   border: #f9f07a 1px;
   padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .hint--unvisible {

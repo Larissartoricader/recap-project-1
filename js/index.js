@@ -49,3 +49,8 @@ buttonAnswer.addEventListener("click", () => {
 buttonHint.addEventListener("click", () => {
   hinText.classList.toggle("hint--visible");
 });
+
+// -------- Create Element in HTML NEW QUESTION ---------------//
+
+const questionCard = document.querySelector('[data-js="question-card"]');
+console.log(questionCard);

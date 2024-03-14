@@ -3,15 +3,14 @@ nav {
   background-color: #fb88b4;
   position: fixed;
   z-index: 1;
-  width: 100%;
   bottom: 0;
+  width: 100vw;
 }
 .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2px;
 }
 .menu img {
-  width: 30px;
+  width: 25px;
 }

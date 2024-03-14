@@ -1,0 +1,34 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+fieldset {
+  border-radius: 20px;
+}
+
+textarea {
+  border-radius: 10px;
+  width: 100%;
+  height: 70%;
+}
+
+.create-questions-options {
+  display: flex;
+  justify-content: row;
+  gap: 20px;
+  margin: 5px;
+}
+
+.create-question-submit-box {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.create-question-submit {
+  background-color: #f9f07a;
+  color: hotpink;
+  border: #f9f07a 1px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}

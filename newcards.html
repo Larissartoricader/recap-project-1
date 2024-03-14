@@ -11,14 +11,14 @@
       rel="stylesheet"
     />
     <title>Recap Project 1</title>
-    <script src="./js/index.js" defer></script>
+    <script src="./js/submitquestions.js" defer></script>
   </head>
   <body>
     <header class="apptitle">
       <h1>Create your question!</h1>
     </header>
     <section id="questioncards">
-      <form class="question">
+      <form data-js="form" class="question">
         <svg class="question-bookmark">
           <image
             data-js="bookmark"
@@ -26,28 +26,76 @@
           />
         </svg>
         <h2>Enter your question</h2>
-        <legend for="create-question-txt">Formulate your question here</legend>
-        <textarea
-          name="create-question-txt"
-          id="create-question-txt"
-          placeholder="Here your question here"
-          rows="4"
-          cols="40"
-        ></textarea>
-        <legend>Enter your answer options</legend>
-        <div class="question-answers" data-js="box-question">
-          <p>A</p>
-          <input type="text" />
-          <p>Right one</p>
-          <p>B</p>
-          <input type="text" />
-          <p>Right one</p>
-          <p>C</p>
-          <input type="text" />
-          <p>Right one</p>
-        </div>
-        <div class="questions-buttons">
-          <button type="submit">Send us your question</button>
+        <fieldset>
+          <legend for="create-question-txt">
+            Formulate your question here
+          </legend>
+          <textarea
+            name="create-question-txt"
+            id="create-question-txt"
+            placeholder="--- Type in your question here ---"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Enter your answer options</legend>
+          <div class="question-answers" data-js="box-question">
+            <div class="create-questions-options">
+              <p>A</p>
+              <input type="text" name="answer-option-a" />
+            </div>
+            <div class="create-questions-options">
+              <p>B</p>
+              <input type="text" name="answer-option-b" />
+            </div>
+            <div class="create-questions-options">
+              <p>C</p>
+              <input type="text" name="answer-option-c" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Select the right answer</legend>
+          <div>
+            <label for="choice-options">Option A</label>
+            <input
+              type="radio"
+              id="choice-options"
+              name="Choice1"
+              value="Choice3"
+            />
+
+            <label for="contactChoice2">Option B</label>
+            <input
+              type="radio"
+              id="choice-options"
+              name="Choice2"
+              value="Choice2"
+            />
+            <label for="contactChoice3">Option B</label>
+
+            <input
+              type="radio"
+              id="choice-options"
+              name="Choice3"
+              value="Choice3"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Just another Step</legend>
+          <div>
+            <p>Tags</p>
+            <textarea id="tag" name="tag"></textarea>
+          </div>
+          <div>
+            <p>Hint</p>
+            <textarea name="hint"></textarea>
+          </div>
+        </fieldset>
+        <div class="create-question-submit-box">
+          <button type="submit" class="create-question-submit">
+            Send us your question
+          </button>
         </div>
       </form>
     </section>
