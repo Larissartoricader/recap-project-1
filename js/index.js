@@ -1,4 +1,4 @@
-// const allbuttonsAnswer = document.querySelectorAll('[data-js="button-answer"]');
+const allbuttonsAnswer = document.querySelectorAll('[data-js="button-answer"]');
 const buttonAnswer = document.querySelector('[data-js="button-answer"]');
 console.log(buttonAnswer);
 const boxQuestion = document.querySelector("[data-js=box-question]");
@@ -10,19 +10,21 @@ console.log(buttonHint);
 const hinText = document.querySelector('[data-js="hint-Text"]');
 console.log(hinText);
 
-// allbuttonsAnswer.forEach((buttonAnswer) => {
-//   buttonAnswer.addEventListener("mouseover", () => {
-//     buttonAnswer.style.backgroundColor = "hotpink";
-//     buttonAnswer.style.color = "#f9f07a";
-//   });
+// ------- Move Over ----------
 
-//   buttonAnswer.addEventListener("mouseout", () => {
-//     buttonAnswer.style.backgroundColor = "#f9f07a";
-//     buttonAnswer.style.color = "hotpink";
-//   });
-// });
+allbuttonsAnswer.forEach((buttonAnswer) => {
+  buttonAnswer.addEventListener("mouseover", () => {
+    buttonAnswer.style.backgroundColor = "hotpink";
+    buttonAnswer.style.color = "#f9f07a";
+  });
 
-// boxSolution.style.visibility = "visible";
+  buttonAnswer.addEventListener("mouseout", () => {
+    buttonAnswer.style.backgroundColor = "#f9f07a";
+    buttonAnswer.style.color = "hotpink";
+  });
+});
+
+boxSolution.style.visibility = "visible";
 
 // ------- SVG Bookmarks ----------
 
@@ -52,5 +54,11 @@ buttonHint.addEventListener("click", () => {
 
 // -------- Create Element in HTML NEW QUESTION ---------------//
 
+const questionCardsContainer = document.querySelector(
+  `[data-js="question-cards-container"]`
+);
+console.log(questionCardsContainer);
+
 const questionCard = document.querySelector('[data-js="question-card"]');
-console.log(questionCard);
+const newQuestionCard = questionCard.cloneNode(true);
+questionCardsContainer.append(newQuestionCard);

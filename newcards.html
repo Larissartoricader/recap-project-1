@@ -17,7 +17,7 @@
     <header class="apptitle">
       <h1>Create your question!</h1>
     </header>
-    <section id="questioncards">
+    <section data-js="creater-question-form-box">
       <form data-js="form" class="question">
         <svg class="question-bookmark">
           <image
@@ -27,69 +27,71 @@
         </svg>
         <h2>Enter your question</h2>
         <fieldset>
-          <legend for="create-question-txt">
+          <label for="create-question-wording">
             Formulate your question here
-          </legend>
+          </label>
           <textarea
-            name="create-question-txt"
-            id="create-question-txt"
+            name="createQuestionWording"
+            id="create-question-wording"
             placeholder="--- Type in your question here ---"
           ></textarea>
         </fieldset>
         <fieldset>
-          <legend>Enter your answer options</legend>
+          <label>Enter your answer options</label>
           <div class="question-answers" data-js="box-question">
             <div class="create-questions-options">
               <p>A</p>
-              <input type="text" name="answer-option-a" />
+              <input type="text" name="choiseOptionA" />
             </div>
             <div class="create-questions-options">
               <p>B</p>
-              <input type="text" name="answer-option-b" />
+              <input type="text" name="choiseOptionB" />
             </div>
             <div class="create-questions-options">
               <p>C</p>
-              <input type="text" name="answer-option-c" />
+              <input type="text" name="choiseOptionC" />
             </div>
           </div>
         </fieldset>
         <fieldset>
-          <legend>Select the right answer</legend>
+          <label for="rightChoice"> Select the right answer </label>
           <div>
-            <label for="choice-options">Option A</label>
+            <label for="rightChoice">Option A</label>
             <input
               type="radio"
-              id="choice-options"
-              name="Choice1"
-              value="Choice3"
+              id="rightChoice1"
+              name="rightChoice"
+              value="Right-Choice-A"
             />
-
-            <label for="contactChoice2">Option B</label>
+          </div>
+          <div>
+            <label for="rightChoice">Option B</label>
             <input
               type="radio"
-              id="choice-options"
-              name="Choice2"
-              value="Choice2"
+              id="rightChoice2"
+              name="rightChoice"
+              value="Right-Choice-B"
             />
-            <label for="contactChoice3">Option B</label>
-
+          </div>
+          <div>
+            <label for="rightChoice">Option C</label>
             <input
               type="radio"
-              id="choice-options"
-              name="Choice3"
-              value="Choice3"
+              id="rightChoice3"
+              name="rightChoice"
+              value="Right-Choice-C"
             />
           </div>
         </fieldset>
         <fieldset>
           <legend>Just another Step</legend>
           <div>
-            <p>Tags</p>
+            <label for="tag">Tags</label>
             <textarea id="tag" name="tag"></textarea>
           </div>
           <div>
-            <p>Hint</p>
-            <textarea name="hint"></textarea>
+            <label for="hint">Hint</label>
+            <textarea name="hint" id="hint" maxlength="150"></textarea>
           </div>
         </fieldset>
         <div class="create-question-submit-box">
