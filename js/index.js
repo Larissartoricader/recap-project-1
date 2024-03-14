@@ -1,21 +1,22 @@
-const allbuttonsAnswer = document.querySelectorAll('[data-js="button-answer"]');
-const allBoxQuestions = document.querySelectorAll("[data-js=box-question]");
-const boxSolution = document.querySelectorAll("[data-js=box-solution]");
+// const allbuttonsAnswer = document.querySelectorAll('[data-js="button-answer"]');
+const buttonAnswer = document.querySelector('[data-js="button-answer"]');
+console.log(buttonAnswer);
+const boxQuestion = document.querySelector("[data-js=box-question]");
+console.log(boxQuestion);
+const boxSolution = document.querySelector("[data-js=box-solution]");
+console.log(boxSolution);
 
-allbuttonsAnswer.forEach((buttonAnswer, boxSolution) => {
-  buttonAnswer.addEventListener("mouseover", () => {
-    buttonAnswer.style.backgroundColor = "hotpink";
-    buttonAnswer.style.color = "#f9f07a";
-  });
+// allbuttonsAnswer.forEach((buttonAnswer) => {
+//   buttonAnswer.addEventListener("mouseover", () => {
+//     buttonAnswer.style.backgroundColor = "hotpink";
+//     buttonAnswer.style.color = "#f9f07a";
+//   });
 
-  buttonAnswer.addEventListener("mouseout", () => {
-    buttonAnswer.style.backgroundColor = "#f9f07a";
-    buttonAnswer.style.color = "hotpink";
-  });
-  // buttonAnswer.addEventListener("click", () => {
-  //   boxSolution.style.visibility = "visible";
-  // });
-});
+//   buttonAnswer.addEventListener("mouseout", () => {
+//     buttonAnswer.style.backgroundColor = "#f9f07a";
+//     buttonAnswer.style.color = "hotpink";
+//   });
+// });
 
 // boxSolution.style.visibility = "visible";
 
@@ -33,4 +34,10 @@ bookmark.addEventListener("click", () => {
     const newBookmark = `assets/images/bookmark-heart-fill.svg`;
     bookmark.setAttribute("xlink:href", newBookmark);
   }
+});
+
+buttonAnswer.addEventListener("click", () => {
+  console.log(boxSolution);
+  boxSolution.classList.toggle("box-solution--visible");
+  boxQuestion.classList.toggle("box-question--unvisible");
 });

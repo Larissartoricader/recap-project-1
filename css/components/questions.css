@@ -17,15 +17,26 @@
   fill: hotpink;
 }
 
-.question-answers {
+.box-question {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  display: block;
+}
+
+.box-question--unvisible {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: none;
 }
 
 .box-solution {
-  display: hidden;
+  display: none;
 }
-.questions-buttons {
+.box-solution--visible {
+  display: block;
+}
+
+.box-solution .questions-buttons {
   display: flex;
   justify-content: center;
   gap: 2rem;
