@@ -4,94 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
     <title>Recap Project 1</title>
     <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="apptitle">
-      <h1>Are You Mainstream?</h1>
+      <h1>Create your question!</h1>
     </header>
     <section id="questioncards">
-      <div class="question">
+      <form class="question">
         <svg class="question-bookmark">
-            <image data-js="bookmark" xlink:href="assets/images/bookmark-heart.svg"/>
+          <image
+            data-js="bookmark"
+            xlink:href="assets/images/bookmark-heart.svg"
+          />
         </svg>
-        <h2>Who had the most profitable worldwide tour in 2023?</h2>
-          <div class="question-answers" data-js="box-question">
-            <input type="checkbox">Beyoncé</input type="checkbox">
-            <input type="checkbox">Taylor Swift</input type="checkbox">
-            <input type="checkbox">Maddona</input type="checkbox">
-          </div>
-          <div data-js="box-solution" class="box-solution">
+        <h2>Insira sua pergunta</h2>
+        <legend for="create-question-txt">Insira sua pergunta aqui</legend>
+        <textarea
+          name="create-question-txt"
+          id="create-question-txt"
+          placeholder="Here your question here"
+          rows="4"
+          cols="60"
+        ></textarea>
+        <legend>Insira as opcoes</legend>
+        <div class="question-answers" data-js="box-question">
+          <p>A <input type="text" /></p>
+          <p>Right one<</p>
+          <p>B <input type="text" /></p>
+          <p>Right one</p>
+          <p>C <input type="text" /></p>
+          <p>Right one</p>
+        </div>
+        <div data-js="box-solution" class="box-solution">
           <p>Here you can find a great answer</p>
-         </div>
-          <div class="questions-buttons">
-            <button type="button" data-js="button-answer">Show the Answer</button>
-            <button>Show me a hint</button>
-          </div>
+        </div>
+        <div class="questions-buttons">
+          <button type="button" data-js="button-answer">Show the Answer</button>
+          <button>Show me a hint</button>
+        </div>
         <div class="categories">
           <p>#music</p>
           <p>#worldtour</p>
           <p>#divas</p>
         </div>
-      </div>
-      <div class="question">
-        <svg class="question-bookmark">
-            <image xlink:href="assets/images/bookmark-heart.svg"/>
-        </svg>
-        <h2>Who had the most profitable worldwide tour in 2023?</h2>
-          <div class="question-answers" data-js="box-question">
-            <input type="checkbox">Beyoncé</input type="checkbox">
-            <input type="checkbox">Taylor Swift</input type="checkbox">
-            <input type="checkbox">Maddona</input type="checkbox">
-          </div>
-          <div data-js="box-solution" class="box-solution">
-          <p>Here you can find a great answer</p>
-         </div>
-          <div class="questions-buttons">
-            <button type="button" data-js="button-answer">Show the Answer</button>
-            <button>Show me a hint</button>
-          </div>
-        <div class="categories">
-          <p>#music</p>
-          <p>#worldtour</p>
-          <p>#divas</p>
-        </div>
-      </div>
-      <div class="question">
-        <svg class="question-bookmark">
-            <image xlink:href="assets/images/bookmark-heart.svg"/>
-        </svg>
-        <h2>Who had the most profitable worldwide tour in 2023?</h2>
-          <div class="question-answers" data-js="box-question">
-            <input type="checkbox">Beyoncé</input type="checkbox">
-            <input type="checkbox">Taylor Swift</input type="checkbox">
-            <input type="checkbox">Maddona</input type="checkbox">
-          </div>
-          <div data-js="box-solution" class="box-solution">
-          <p>Here you can find a great answer</p>
-         </div>
-          <div class="questions-buttons">
-            <button type="button" data-js="button-answer">Show the Answer</button>
-            <button>Show me a hint</button>
-          </div>
-        <div class="categories">
-          <p>#music</p>
-          <p>#worldtour</p>
-          <p>#divas</p>
-        </div>
-      </div>
-      </div>
+      </form>
     </section>
     <nav>
-        <div class="menu">
-          <a href="./index.html"><img src="assets/images/home.svg"></a>
-          <a href="./bookmarks.html"><img src="assets/images/bookmark-heart.svg"></a>
-          <a href="./profil.html"><img src="assets/images/person-square.svg"></a>
-        </div>
+      <div class="menu">
+        <a href="./index.html"><img src="assets/images/home.svg" /></a>
+        <a href="./bookmarks.html"
+          ><img src="assets/images/bookmark-heart.svg"
+        /></a>
+        <a href="./profil.html"
+          ><img src="assets/images/person-square.svg"
+        /></a>
+      </div>
     </nav>
   </body>
 </html>
